@@ -10,9 +10,7 @@
    - [RAG Subgraph](#rag-subgraph)
 4. [Installation & Setup](#installation--setup)
 5. [Usage](#usage)
-6. [Project Structure](#project-structure)
-7. [Contributing](#contributing)
-8. [License](#license)
+
 ---
 
 ## Overview
@@ -121,61 +119,7 @@ By combining asynchronous state graphs, memory management, and retrieval-based t
 
    - For broad real estate questions, the classifier routes them to RAG for context retrieval.
 
-4. **Updating the Vector Store:**
 
-   - Use `update_vector_store_with_docx` in `RAGChatbot` to add new DOCX files to the FAISS index.
-
----
-
-## Project Structure
-
-```
-advanced-real-estate-chatbot/
-│
-├── chain_setup.py             # LLM configurations & custom callback handlers
-├── core/
-│   └── settings.py            # Environment & model settings (API keys, model names, paths)
-├── faiss_index.py             # FAISS index creation & loading logic
-├── format.py                  # Prompt templates for classification & subgraphs
-├── main_graph.py              # Main state graph for classification & routing
-├── RAG_subgraph.py            # RAG subgraph code (retrieve context, generate answers)
-├── semantic_chunking.py       # Additional chunking logic
-├── services/
-│   ├── FAISSIndexService.py   # Vector store creation & updating
-│   ├── SemanticChunkingService.py  # Document loading & chunking
-│   └── ...
-├── units_subgraph.py          # UNITS subgraph for property-specific conversations
-├── schemas.py                 # Data schemas (property specs, etc.)
-├── requirements.txt           # Dependencies
-└── README.md                  # This file
-```
-
----
-
-## Contributing
-
-1. **Fork & Clone**\
-   Fork this repo and clone it locally.
-
-2. **Create a Branch**
-
-   ```bash
-   git checkout -b feature/your-feature
-   ```
-
-3. **Commit & Push**
-
-   ```bash
-   git commit -m "Your commit message"
-   git push origin feature/your-feature
-   ```
-
-4. **Pull Request**\
-   Open a pull request on GitHub describing your changes.
-
----
-
-## License
 
 All rights are reserved by **iSemantics-ai**. This project is provided for Wzgate under the conditions that all copyrights belong to **iSemantics-ai**.
 
