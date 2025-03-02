@@ -1,0 +1,26 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: win-64
+
+faiss-cpu
+fastapi
+langchain
+langchain-community
+langchain-core
+langchain-experimental
+langchain-openai
+langchain-text-splitters
+langgraph
+langgraph-checkpoint
+langgraph-sdk
+langsmith
+numpy
+pandas
+parso
+pillow
+boto3
+gradio
+IPython
+google-auth
+google-api-python-client-stubs
+docx2txt
